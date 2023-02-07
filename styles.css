@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction:row;
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    margin: 0;
+}
+
+.image-desktop img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.container-principal{
+    width: 85%;
+    padding: 30px ;
+    margin: 0px ;
+    display: grid;
+    align-content: space-evenly;
+    text-align: left;
+    font-family: 'Fraunces', serif;
+
+}
+
+.container-principal p{
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+    font-size: 13px;
+}
+.container-principal h1{
+    margin-top: 13px;
+    line-height: 1em;
+}
+
+#texto-abaixo{
+    margin-top: 25px;
+    line-height: 1.6em;
+    padding-right: 10px;
+}
+
+.precios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.precios{
+    margin-top: 20px;
+    color: hsl(158, 36%, 37%);
+}
+
+.precios p{
+    padding-left: 15px;
+    text-decoration: line-through
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.button button{
+   background-color: hsl(158, 36%, 37%);
+   color: white;
+   width: 100%;
+   height: 45px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 8px;
+   transition: 0.3s;
+}
+
+.button button:hover{
+    background-color: hsl(158, 36%, 20%);
+}
+
+@media(max-width:  480px){
+    main{
+        display: grid;
+        margin: 20px;
+    }
+    .image-desktop img{
+        border-radius: 8px 8px 0px 0px;
+    }
+    .container-principal{
+        width: 90%;
+        padding: 25px 0px 30px 40px;
+    }
+}
